@@ -1,0 +1,196 @@
+[gd_scene format=3 uid="uid://602mur0hm8xy"]
+
+[ext_resource type="Theme" uid="uid://bahu58gusckrh" path="res://themes/theme.tres" id="1_ba4lm"]
+[ext_resource type="Script" uid="uid://b3ii5e24kilxl" path="res://scripts/demo.gd" id="1_tqfh0"]
+[ext_resource type="Texture2D" uid="uid://dbx2hia72eyo1" path="res://assets/textures/dog/plant dog_1.png" id="3_h5dly"]
+[ext_resource type="Texture2D" uid="uid://c4rdvk8ypqsl4" path="res://assets/textures/dog/plant dog_2.png" id="4_nwon6"]
+[ext_resource type="Texture2D" uid="uid://kay88arom53f" path="res://assets/textures/dog/plant dog_3.png" id="5_6gsge"]
+[ext_resource type="Texture2D" uid="uid://3hecmngc1480" path="res://assets/textures/dog/plant dog_4.png" id="6_s3vvr"]
+[ext_resource type="Texture2D" uid="uid://dmym7gkwt6nl1" path="res://assets/textures/dog/plant dog_5.png" id="7_6cg1f"]
+[ext_resource type="Texture2D" uid="uid://ci7s635awbkc" path="res://assets/textures/dog/plant dog_6.png" id="8_7hm0d"]
+[ext_resource type="Texture2D" uid="uid://6x1bghq5xb2v" path="res://assets/textures/dog/plant dog_7.png" id="9_l53ft"]
+[ext_resource type="Texture2D" uid="uid://d1bygplmlvk3a" path="res://assets/textures/dog/plant dog_8.png" id="10_xe7ic"]
+[ext_resource type="Texture2D" uid="uid://bg38kaqarai7y" path="res://assets/textures/duck/kaczuha 4 1.png" id="11_6cg1f"]
+[ext_resource type="Texture2D" uid="uid://b1vewacrssd8n" path="res://assets/textures/duck/kaczuha 4 2.png" id="12_7hm0d"]
+[ext_resource type="Texture2D" uid="uid://bkv0o5o2t0wam" path="res://assets/textures/duck/kaczuha 4 3.png" id="13_l53ft"]
+[ext_resource type="Texture2D" uid="uid://bav0f45me350a" path="res://assets/textures/duck/kaczuha 4 4.png" id="14_xe7ic"]
+[ext_resource type="Texture2D" uid="uid://diesvfi10al4r" path="res://assets/textures/bomb.png" id="15_7hm0d"]
+[ext_resource type="Texture2D" uid="uid://dtmn5g7gmyl3k" path="res://assets/textures/explosion.png" id="16_l53ft"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ba4lm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_h5dly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nwon6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6gsge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s3vvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6cg1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7hm0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_l53ft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xe7ic")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h5dly"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_6cg1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7hm0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_l53ft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xe7ic")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7hm0d"]
+atlas = ExtResource("15_7hm0d")
+region = Rect2(0, 0, 20, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l53ft"]
+atlas = ExtResource("15_7hm0d")
+region = Rect2(20, 0, 20, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xe7ic"]
+atlas = ExtResource("15_7hm0d")
+region = Rect2(40, 0, 20, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0h4v"]
+atlas = ExtResource("15_7hm0d")
+region = Rect2(60, 0, 20, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6cg1f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7hm0d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l53ft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xe7ic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0h4v")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxneo"]
+atlas = ExtResource("16_l53ft")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixuqm"]
+atlas = ExtResource("16_l53ft")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1es7"]
+atlas = ExtResource("16_l53ft")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2uoh"]
+atlas = ExtResource("16_l53ft")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k71ds"]
+atlas = ExtResource("16_l53ft")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b63qt"]
+atlas = ExtResource("16_l53ft")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7hm0d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxneo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixuqm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1es7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u2uoh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k71ds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b63qt")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Demo" type="Control" unique_id=586327017]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ba4lm")
+script = ExtResource("1_tqfh0")
+
+[node name="Dog" type="AnimatedSprite2D" parent="." unique_id=1576104338]
+position = Vector2(-100, 250)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_ba4lm")
+autoplay = "default"
+frame_progress = 0.5261834
+
+[node name="Duck" type="AnimatedSprite2D" parent="." unique_id=1051483266]
+position = Vector2(802, 138)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_h5dly")
+autoplay = "default"
+
+[node name="Bomb" type="AnimatedSprite2D" parent="." unique_id=259055497]
+position = Vector2(360, -50)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_6cg1f")
+autoplay = "default"
+
+[node name="Explosion" type="AnimatedSprite2D" parent="." unique_id=361011575]
+visible = false
+position = Vector2(360, 270)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_7hm0d")
+frame = 5
+frame_progress = 1.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1946802367]
+position = Vector2(360, 270)

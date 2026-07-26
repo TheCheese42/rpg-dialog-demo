@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://crdg55kgfcww7"]
+
+[ext_resource type="Theme" uid="uid://bahu58gusckrh" path="res://themes/theme.tres" id="1_absye"]
+[ext_resource type="Script" uid="uid://hja8hp7dhw26" path="res://scripts/dialog_popup.gd" id="2_il2u8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3fuje"]
+content_margin_left = 32.0
+content_margin_top = 24.0
+content_margin_right = 32.0
+content_margin_bottom = 24.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color(1, 1, 1, 1)
+
+[node name="DialogPopup" type="MarginContainer" unique_id=40620126]
+custom_minimum_size = Vector2(720, 164)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -140.0
+grow_horizontal = 2
+grow_vertical = 0
+offset_transform_enabled = true
+theme = ExtResource("1_absye")
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 24
+script = ExtResource("2_il2u8")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1498884652]
+custom_minimum_size = Vector2(640, 140)
+layout_mode = 2
+theme = ExtResource("1_absye")
+theme_override_styles/panel = SubResource("StyleBoxFlat_3fuje")
+
+[connection signal="resized" from="." to="." method="_on_resized"]

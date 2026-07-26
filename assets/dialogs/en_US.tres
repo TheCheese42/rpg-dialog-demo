@@ -1,0 +1,354 @@
+[gd_resource type="Resource" script_class="DialogFile" format=3 uid="uid://bmmvp3l0c2ss7"]
+
+[ext_resource type="Script" uid="uid://bshif4ifd2xqr" path="res://addons/rpg_dialog_display/dialog_file.gd" id="1_783s4"]
+
+[resource]
+script = ExtResource("1_783s4")
+presets = Dictionary[String, Dictionary]({
+"Default": {
+"color": Color(1, 1, 1, 1),
+"shake_intensity": 0,
+"shake_speed": 0,
+"speed": 100,
+"wave_intensity": 0,
+"wave_speed": 0
+},
+"Duck": {
+"color": Color(1, 1, 1, 1),
+"shake_intensity": 0.0,
+"shake_speed": 0.0,
+"speed": 180.0,
+"wave_intensity": 4.0,
+"wave_speed": 1000.0
+}
+})
+color_presets = Dictionary[String, Color]({
+"g": Color(0, 0.6729009, 0, 1),
+"r": Color(1, 0, 0, 1),
+"y": Color(1, 1, 0, 1)
+})
+conversations = Array[Dictionary]([{
+"contents": [{
+"contents": [{
+"contents": [],
+"id": "dSNFTHwq",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "Woof!<d 1000>",
+"type": "Page"
+}, {
+"contents": [],
+"id": "qLEbODYQ",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "I am <c g>VEGAN<c>!
+Are you surprised?",
+"type": "Page"
+}, {
+"contents": [{
+"contents": [],
+"text": "Eat vegan",
+"type": "Choice"
+}, {
+"contents": [],
+"text": "Vegan food",
+"type": "Choice"
+}, {
+"contents": [{
+"contents": [],
+"id": "MoCzxdWE",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "<wave 4 400>That is correct!",
+"type": "Page"
+}],
+"text": "Both",
+"type": "Choice"
+}],
+"id": "zbYiBzJL",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "But what does that mean?
+Do I eat vegan, or am I vegan food?
+Use the arrow keys to tell me!",
+"type": "Page"
+}, {
+"contents": [],
+"id": "kiYQeYIp",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "In fact, I am both eating and being vegan.",
+"type": "Page"
+}, {
+"script_id": "EARTHQUAKE",
+"type": "Script"
+}, {
+"contents": [],
+"id": "GnmcgKaY",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "<shake 1 50>What on earth is that?",
+"type": "Page"
+}, {
+"contents": [],
+"id": "dujLONEV",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "Oh no...",
+"type": "Page"
+}],
+"name": "dog",
+"type": "Speaker"
+}, {
+"script_id": "DUCK_ENTER",
+"type": "Script"
+}, {
+"contents": [{
+"contents": [],
+"id": "OHjplXhB",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "Duck",
+"text": "Hello <s 60>:<s>)",
+"type": "Page"
+}],
+"name": "duck",
+"type": "Speaker"
+}, {
+"contents": [{
+"contents": [],
+"id": "RJPupUyY",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "How dare <c r>you<c> show up now???",
+"type": "Page"
+}, {
+"contents": [],
+"id": "XvPSiyPZ",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "You<d 500> are<d 500> not<d 500> going<d 500> to<d 500> ruin my great show!",
+"type": "Page"
+}],
+"name": "dog",
+"type": "Speaker"
+}, {
+"contents": [{
+"script_id": "DUCK_WALK_START",
+"type": "Script"
+}, {
+"contents": [],
+"id": "ZZDnQftq",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "Duck",
+"text": "There's a show? I wanna see it!",
+"type": "Page"
+}, {
+"script_id": "DUCK_WALK_STOP",
+"type": "Script"
+}],
+"name": "duck",
+"type": "Speaker"
+}, {
+"contents": [{
+"contents": [],
+"id": "RcnMneKa",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "Alright, listen up.
+Do not let this duck ruin everything!",
+"type": "Page"
+}, {
+"contents": [],
+"id": "duVeafVT",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "There's actually a way to skip text messages.
+Press <c r>SHIFT<c>!
+<s 1000>Press shift press shift press shift...",
+"type": "Page"
+}, {
+"script_id": "CHECK_SKIPPED",
+"type": "Script"
+}, {
+"contents": [],
+"id": "yBvqZRGS",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "Are you slow?
+<s 200><shake 1 1000><c r>PRESS SHIFT!
+<s 1000>Press shift press shift press shift...",
+"type": "Page"
+}, {
+"target_id": "yBvqZRGS",
+"type": "Goto"
+}, {
+"contents": [],
+"id": "PRESSED_SHIFT",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "Very good.
+Just use it on the duck, okay?",
+"type": "Page"
+}, {
+"contents": [],
+"id": "aBERjAYm",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "Don't use it on me though! I dare you.",
+"type": "Page"
+}],
+"name": "dog",
+"type": "Speaker"
+}, {
+"contents": [{
+"script_id": "DUCK_WALK_START",
+"type": "Script"
+}, {
+"contents": [],
+"id": "rmWDpRBb",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "Duck",
+"text": "Who are you talking to?",
+"type": "Page"
+}, {
+"script_id": "DUCK_WALK_STOP",
+"type": "Script"
+}],
+"name": "duck",
+"type": "Speaker"
+}, {
+"contents": [{
+"contents": [],
+"id": "JQgJGLLJ",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "Oh shut up.<d 500><s 50><b 11><s 100><d 500>Please leave me alone, you are ruining the show!",
+"type": "Page"
+}],
+"name": "dog",
+"type": "Speaker"
+}, {
+"contents": [{
+"contents": [],
+"id": "DxPWXgfc",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "Duck",
+"text": "Okay.",
+"type": "Page"
+}, {
+"script_id": "DUCK_LEAVE",
+"type": "Script"
+}],
+"name": "duck",
+"type": "Speaker"
+}, {
+"contents": [{
+"contents": [],
+"id": "EtkIjewd",
+"interjection": {
+"name": "duck",
+"text": "I heard that!",
+"type": "Interjection"
+},
+"preset": "",
+"text": "Finally, this <c r>idiot<c> is gone.<script DUCK_PEEK><cur 19><b 5><c g>friendly duck<c><script DUCK_HIDE>",
+"type": "Page"
+}, {
+"contents": [],
+"id": "PSsKbxUz",
+"interjection": {
+"name": "",
+"text": "",
+"type": "Interjection"
+},
+"preset": "",
+"text": "<s 50>Anyway, that was my show, hope you liked it.",
+"type": "Page"
+}, {
+"script_id": "BOMB",
+"type": "Script"
+}],
+"name": "dog",
+"type": "Speaker"
+}],
+"id": "DOG_INTRODUCTION",
+"original_hash": 0,
+"preset": "Default",
+"type": "Conversation"
+}])
